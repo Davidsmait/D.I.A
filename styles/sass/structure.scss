@@ -1,0 +1,26 @@
+@import 'colors';
+
+body{
+    background-color: $bodyColor;
+    display: grid;
+    min-width: 100vw;
+    min-height: 100vh;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows:  1fr 6fr 1fr;
+}
+
+.header{
+    background-color: $headerColor;
+    grid-column: 5 span;
+}
+
+.aside {
+    background-color: $asideColor;
+    grid-column: 2 / 3 span;
+    grid-row: 1 span;
+}
+
+.footer {
+    background-color: $footerColor;
+    grid-column: 5 span;
+}

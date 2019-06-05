@@ -1,0 +1,26 @@
+body {
+  background-color: #eee;
+  display: grid;
+  min-width: 100vw;
+  min-height: 100vh;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr 6fr 1fr;
+}
+
+.header {
+  background-color: #c06d6d;
+  grid-column: 5 span;
+}
+
+.aside {
+  background-color: #45ac95;
+  grid-column: 2/3 span;
+  grid-row: 1 span;
+}
+
+.footer {
+  background-color: #f6accf;
+  grid-column: 5 span;
+}
+
+/*# sourceMappingURL=structure.css.map */
