@@ -4,7 +4,7 @@ let saludos = [
     '¿que pasa?'
 ]
 
-const btn = document.querySelector('.speak');
+const btn = document.querySelector('.speakButton');
 const interpret = document.querySelector('.interpret')
 const response = document.querySelector('.response');
 

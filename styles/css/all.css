@@ -17,19 +17,73 @@ body {
 }
 
 .header {
-  background-color: #c06d6d;
   grid-column: 5 span;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Quicksand", sans-serif;
+}
+
+.aside {
+  grid-column: 1/5 span;
+  grid-row: 1 span;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.footer {
+  grid-column: 5 span;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Quicksand", sans-serif;
+}
+
+.header {
+  background-color: #333;
+  color: #eee;
 }
 
 .aside {
   background-color: #45ac95;
-  grid-column: 2/3 span;
-  grid-row: 1 span;
+  color: #eee;
+}
+
+.title {
+  grid-column: 1/6 span;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.speakText {
+  grid-column: 2/5;
+  font-size: 3rem;
+}
+
+.speakButton {
+  grid-column: 5;
+  grid-row: 2;
+}
+
+.interpret, .response {
+  font-size: 2rem;
+}
+
+.interpret {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.response {
+  grid-column: 2;
+  grid-row: 4;
 }
 
 .footer {
-  background-color: #f6accf;
-  grid-column: 5 span;
+  color: #eee;
+  background-color: #333;
 }
 
 /*# sourceMappingURL=all.css.map */

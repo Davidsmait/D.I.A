@@ -1,5 +1,12 @@
 @import 'colors';
 
+@mixin centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
 body{
     background-color: $bodyColor;
     display: grid;
@@ -10,17 +17,21 @@ body{
 }
 
 .header{
-    background-color: $headerColor;
     grid-column: 5 span;
+    @include centrado();
 }
 
 .aside {
-    background-color: $asideColor;
-    grid-column: 2 / 3 span;
+    grid-column: 1 / 5 span;
     grid-row: 1 span;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr)
+
+
 }
 
 .footer {
-    background-color: $footerColor;
     grid-column: 5 span;
+    @include centrado();
 }

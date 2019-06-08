@@ -1,0 +1,53 @@
+@import 'colors';
+
+@mixin centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    background-color: $headerColor;
+    color: $colorWordOne;
+}
+
+.aside {
+    background-color: $asideColor;
+    color: $colorWordOne;
+
+}
+
+.title {
+    grid-column: 1 / 6 span ;
+    @include centrado();
+}
+
+.speakText {
+    grid-column: 2/ 5;
+    font-size: 3rem;
+}
+
+.speakButton {
+    grid-column: 5;
+    grid-row: 2;
+}
+
+.interpret, .response {
+    font-size: 2rem;
+}
+
+.interpret {
+    grid-column: 2;
+    grid-row: 3;
+    
+}
+
+.response {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.footer {
+    color: $colorWordOne;
+    background-color: $footerColor;
+}

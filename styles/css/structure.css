@@ -8,19 +8,27 @@ body {
 }
 
 .header {
-  background-color: #c06d6d;
   grid-column: 5 span;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Quicksand", sans-serif;
 }
 
 .aside {
-  background-color: #45ac95;
-  grid-column: 2/3 span;
+  grid-column: 1/5 span;
   grid-row: 1 span;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
 }
 
 .footer {
-  background-color: #f6accf;
   grid-column: 5 span;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Quicksand", sans-serif;
 }
 
 /*# sourceMappingURL=structure.css.map */
