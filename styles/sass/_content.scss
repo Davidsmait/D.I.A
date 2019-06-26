@@ -1,9 +1,18 @@
 @import 'colors';
 
-@mixin centrado {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@mixin reset {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $bodyColor;
+    font-family: 'Quicksand', sans-serif;
+}
+
+a {
+    text-decoration: none;
 }
 
 .header{
@@ -17,37 +26,35 @@
 
 }
 
-.title {
-    grid-column: 1 / 6 span ;
-    @include centrado();
-}
-
-.speakText {
-    grid-column: 2/ 5;
-    font-size: 3rem;
-}
-
-.speakButton {
-    grid-column: 5;
-    grid-row: 2;
-}
-
-.interpret, .response {
-    font-size: 2rem;
-}
-
-.interpret {
-    grid-column: 2;
-    grid-row: 3;
-    
-}
-
-.response {
-    grid-column: 2;
-    grid-row: 4;
-}
-
 .footer {
     color: $colorWordOne;
     background-color: $footerColor;
+}
+
+
+.title {
+    @include reset();
+    font-size: 50px;
+}
+
+.speakText {
+    font-size: 2rem;
+    padding-left: 5px;
+}
+
+.speakButton{
+    font-size: 1.5rem;
+}
+
+.interpret , .response {
+    @include reset();
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+
+.icon{
+    color: #eee;
+    font-size: 2rem;
+    margin: 4px;
 }

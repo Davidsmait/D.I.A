@@ -8,7 +8,6 @@ li {
 }
 
 body {
-  background-color: #eee;
   display: grid;
   min-width: 100vw;
   min-height: 100vh;
@@ -21,7 +20,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Quicksand", sans-serif;
 }
 
 .aside {
@@ -37,17 +35,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Quicksand", sans-serif;
-}
-
-.header {
-  background-color: #333;
-  color: #eee;
-}
-
-.aside {
-  background-color: #45ac95;
-  color: #eee;
 }
 
 .title {
@@ -59,16 +46,12 @@ body {
 
 .speakText {
   grid-column: 2/5;
-  font-size: 3rem;
+  grid-row: 2;
 }
 
 .speakButton {
   grid-column: 5;
   grid-row: 2;
-}
-
-.interpret, .response {
-  font-size: 2rem;
 }
 
 .interpret {
@@ -81,9 +64,58 @@ body {
   grid-row: 4;
 }
 
+body {
+  background-color: #eee;
+  font-family: "Quicksand", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  background-color: #333;
+  color: #eee;
+}
+
+.aside {
+  background-color: #45ac95;
+  color: #eee;
+}
+
 .footer {
   color: #eee;
   background-color: #333;
+}
+
+.title {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 50px;
+}
+
+.speakText {
+  font-size: 2rem;
+  padding-left: 5px;
+}
+
+.speakButton {
+  font-size: 1.5rem;
+}
+
+.interpret, .response {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 30px;
+  margin-top: 40px;
+}
+
+.icon {
+  color: #eee;
+  font-size: 2rem;
+  margin: 4px;
 }
 
 /*# sourceMappingURL=all.css.map */

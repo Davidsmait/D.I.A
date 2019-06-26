@@ -1,7 +1,8 @@
 let saludos = [
     'hola ',
-    'hola pedazo de mierda',
-    '¿que pasa?'
+    'hola, amor y paz',
+    '¿que pasa?',
+    'hola, que buen dia para estar vivos :)'
 ]
 
 const btn = document.querySelector('.speakButton');
@@ -36,7 +37,7 @@ btn.addEventListener('click', () => {
 function readOutLoud (message) {
     const speech = new SpeechSynthesisUtterance();
     let finalText;
-    speech.text = '¿no se que decir carita triste?';
+    speech.text = '¿no se que decir carita triste? :(';
 
     let messageLowerCase = message.toLowerCase();
     
